@@ -5,7 +5,9 @@
     --font-family: "Italianno", cursive;
 
     --color-primary: #B48F41;
-    --color-secondary: #1e3a8a;
+    --color-secondary: #232323;
+    --color-p: #2E3C42;
+    --color-nav: #2E3C42;
 
     --breakpoint-*: initial;
     --breakpoint-sm: 576px;
