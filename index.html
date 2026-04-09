@@ -1,419 +1,384 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind CSS</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="./src/output.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind CSS</title>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
 
-  <body class="bg-[#F7F7F7]">
-    <!-- navbar Start -->
+  <link rel="stylesheet" href="./src/output.css" />
+</head>
 
-    <header
-      class="flex bg-nav py-3 sm:px-6 px-4 min-h-18.75 tracking-wide relative z-50"
-    >
-      <div class="container">
-        <div class="flex mx-auto w-full">
-          <div class="flex flex-wrap items-center lg:gap-y-2 gap-4 w-full">
-            <a href="" class="max-sm:hidden"
-              ><img src="./assets/Logo.png" alt="logo" class="text[32px]" />
-            </a>
-            <a href="" class="hidden max-sm:block"
-              ><img src="./assets/Logo.png" alt="logo" class="text[32px]" />
-            </a>
+<body class="bg-[#F7F7F7]">
+  <!-- navbar Start -->
 
-            <div class="flex items-center gap-1 text-white pl-10">
-              <div class="w-4.5 h-4.5 hidden md:block">
-                <img src="./assets/phone.png" alt="" />
-              </div>
-              <h4 class="text-[16px] hidden md:block">
-                Hotline +125 (895) 658
-              </h4>
+  <header class="flex bg-nav py-3 sm:px-6 px-4 min-h-18.75 tracking-wide relative z-50">
+    <div class="container">
+      <div class="flex mx-auto w-full">
+        <div class="flex flex-wrap items-center lg:gap-y-2 gap-4 w-full">
+          <a href="" class="max-sm:hidden"><img src="./assets/Logo.png" alt="logo" class="text[32px]" />
+          </a>
+          <a href="" class="hidden max-sm:block"><img src="./assets/Logo.png" alt="logo" class="text[32px]" />
+          </a>
+
+          <div class="flex items-center gap-1 text-white pl-10">
+            <div class="w-4.5 h-4.5 hidden md:block">
+              <img src="./assets/phone.png" alt="" />
+            </div>
+            <h4 class="text-[16px] hidden md:block">
+              Hotline +125 (895) 658
+            </h4>
+          </div>
+
+          <div class="flex items-center gap-x-6 gap-y-4 ml-auto">
+            <div id="collapseMenu"
+              class="lg:ml-6 max-lg:hidden lg:block! max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max- lg:before:inset-0 max-lg:before:z-50">
+              <button id="toggleClose"
+                class="lg:hidden fixed top-2 right-4 z-100 rounded-full bg-white w-9 h-9 flex items-center justify-center border border-gray-200 cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black" viewBox="0 0 320.591 320.591">
+                  <path
+                    d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                    data-original="#000000"></path>
+                  <path
+                    d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                    data-original="#000000"></path>
+                </svg>
+              </button>
+
+              <ul
+                class="lg:flex lg:gap-x-3 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-75 max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
+                <li class="mb-6 hidden max-lg:block">
+                  <div class="flex items-center justify-between gap-4">
+                    <a href=""><img src="./assets/Logo.png" alt="logo" class="text[32px]" />
+                    </a>
+                  </div>
+                </li>
+                <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3">
+                  <a href="javascript:void(0)"
+                    class="text-white hover:text-primary text-[15px] block font-semibold">Home</a>
+                </li>
+                <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3">
+                  <a href="javascript:void(0)"
+                    class="text-white hover:text-primary text-[15px] block font-semibold">Pages</a>
+                </li>
+                <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3">
+                  <a href="javascript:void(0)"
+                    class="text-white hover:text-primary text-[15px] block font-semibold">Protfolio</a>
+                </li>
+                <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3">
+                  <a href="javascript:void(0)"
+                    class="text-white hover:text-primary text-[15px] block font-semibold">Blog</a>
+                </li>
+                <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3">
+                  <a href="javascript:void(0)"
+                    class="text-white hover:text-primary text-[15px] block font-semibold">Shop</a>
+                </li>
+              </ul>
             </div>
 
-            <div class="flex items-center gap-x-6 gap-y-4 ml-auto">
-              <div
-                id="collapseMenu"
-                class="lg:ml-6 max-lg:hidden lg:block! max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max- lg:before:inset-0 max-lg:before:z-50"
-              >
-                <button
-                  id="toggleClose"
-                  class="lg:hidden fixed top-2 right-4 z-100 rounded-full bg-white w-9 h-9 flex items-center justify-center border border-gray-200 cursor-pointer"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-3.5 h-3.5 fill-black"
-                    viewBox="0 0 320.591 320.591"
-                  >
-                    <path
-                      d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
-                      data-original="#000000"
-                    ></path>
-                    <path
-                      d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
-                      data-original="#000000"
-                    ></path>
-                  </svg>
-                </button>
-
-                <ul
-                  class="lg:flex lg:gap-x-3 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-75 max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
-                >
-                  <li class="mb-6 hidden max-lg:block">
-                    <div class="flex items-center justify-between gap-4">
-                      <a href=""
-                        ><img
-                          src="./assets/Logo.png"
-                          alt="logo"
-                          class="text[32px]"
-                        />
-                      </a>
-                    </div>
-                  </li>
-                  <li
-                    class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"
-                  >
-                    <a
-                      href="javascript:void(0)"
-                      class="text-white hover:text-primary text-[15px] block font-semibold"
-                      >Home</a
-                    >
-                  </li>
-                  <li
-                    class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"
-                  >
-                    <a
-                      href="javascript:void(0)"
-                      class="text-white hover:text-primary text-[15px] block font-semibold"
-                      >Pages</a
-                    >
-                  </li>
-                  <li
-                    class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"
-                  >
-                    <a
-                      href="javascript:void(0)"
-                      class="text-white hover:text-primary text-[15px] block font-semibold"
-                      >Protfolio</a
-                    >
-                  </li>
-                  <li
-                    class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"
-                  >
-                    <a
-                      href="javascript:void(0)"
-                      class="text-white hover:text-primary text-[15px] block font-semibold"
-                      >Blog</a
-                    >
-                  </li>
-                  <li
-                    class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"
-                  >
-                    <a
-                      href="javascript:void(0)"
-                      class="text-white hover:text-primary text-[15px] block font-semibold"
-                      >Shop</a
-                    >
-                  </li>
-                </ul>
+            <div class="flex items-center sm:space-x-8 space-x-6">
+              <!-- search icon and cart icon -->
+              <div class="w-4.5 h-4.5">
+                <img src="./assets/search.png" alt="search" />
+              </div>
+              <div class="w-4.5 h-4.5">
+                <img src="./assets/cart.png" alt="cart" />
               </div>
 
-              <div class="flex items-center sm:space-x-8 space-x-6">
-                <!-- search icon and cart icon -->
-                <div class="w-4.5 h-4.5">
-                  <img src="./assets/search.png" alt="search" />
+              <!-- button -->
+              <button
+                class="max-lg:hidden px-5 py-3 text-sm font-medium text-white bg-primary cursor-pointer flex items-center gap-2 uppercase">
+                Booking Now
+                <div class="w-3 h-3">
+                  <img src="./assets/right-arrow.png" alt="" />
                 </div>
-                <div class="w-4.5 h-4.5">
-                  <img src="./assets/cart.png" alt="cart" />
-                </div>
+              </button>
 
-                <!-- button -->
-                <button
-                  class="max-lg:hidden px-5 py-3 text-sm font-medium text-white bg-primary cursor-pointer flex items-center gap-2 uppercase"
-                >
-                  Booking Now
-                  <div class="w-3 h-3">
-                    <img src="./assets/right-arrow.png" alt="" />
-                  </div>
-                </button>
-
-                <!-- menu toggle button -->
-                <button
-                  id="toggleOpen"
-                  class="lg:hidden cursor-pointer bg-white w-9 h-9 flex items-center justify-center rounded-full border border-gray-200"
-                >
-                  <svg
-                    class="w-7 h-7"
-                    fill="#333"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
+              <!-- menu toggle button -->
+              <button id="toggleOpen"
+                class="lg:hidden cursor-pointer bg-white w-9 h-9 flex items-center justify-center rounded-full border border-gray-200">
+                <svg class="w-7 h-7" fill="#333" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- banner section Start -->
+  <!-- banner section Start -->
 
-    <section id="banner">
-      <div
-        id="controls-carousel"
-        class="relative w-full"
-        data-carousel="static"
-      >
-        <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden rounded-base md:h-96">
-          <!-- Item 1 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <div
-              style="
+  <section id="banner">
+    <div id="controls-carousel" class="relative w-full" data-carousel="static">
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 overflow-hidden rounded-base md:h-96">
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div style="
                 background-image: url(./assets/banner.png);
                 background-size: cover;
                 background-position: center;
-              "
-              class="md:h-116.5 w-full"
-            >
-              <div class="container">
-                <div class="w-full flex flex-col items-start py-16 padding">
-                  <h4 class="text-primary text-[14px] leading-6.5 font-bold">
-                    Welcome to Our Barber
-                  </h4>
-                  <h1
-                    class="text-white text-4xl lg:text-5xl font-bold mb-16 mt-8.75"
-                  >
-                    <span class="block">Best Hair Salon for a </span
-                    >Professional Look
-                  </h1>
-                  <div class="flex gap-3">
-                    <button
-                      class="px-5 py-3 text-sm font-medium text-white bg-primary cursor-pointer flex items-center gap-2"
-                    >
-                      BOOKING NOW
-                      <div class="w-3 h-3">
-                        <img src="./assets/right-arrow.png" alt="" />
-                      </div>
-                    </button>
-                    <button
-                      class="px-5 py-3 text-sm font-medium text-primary bg-transparent cursor-pointer flex items-center gap-2 border border-primary"
-                    >
-                      BOOKING NOW
-                      <div class="w-3 h-3">
-                        <img src="./assets/color-arrow.png" alt="arrow" />
-                      </div>
-                    </button>
-                  </div>
+              " class="md:h-116.5 w-full">
+            <div class="container">
+              <div class="w-full flex flex-col items-start py-16 padding">
+                <h4 class="text-primary text-[14px] leading-6.5 font-bold">
+                  Welcome to Our Barber
+                </h4>
+                <h1 class="text-white text-4xl lg:text-5xl font-bold mb-16 mt-8.75">
+                  <span class="block">Best Hair Salon for a </span>Professional Look
+                </h1>
+                <div class="flex gap-3">
+                  <button
+                    class="px-5 py-3 text-sm font-medium text-white bg-primary cursor-pointer flex items-center gap-2">
+                    BOOKING NOW
+                    <div class="w-3 h-3">
+                      <img src="./assets/right-arrow.png" alt="" />
+                    </div>
+                  </button>
+                  <button
+                    class="px-5 py-3 text-sm font-medium text-primary bg-transparent cursor-pointer flex items-center gap-2 border border-primary">
+                    BOOKING NOW
+                    <div class="w-3 h-3">
+                      <img src="./assets/color-arrow.png" alt="arrow" />
+                    </div>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Item 2 -->
-          <div
-            class="hidden duration-700 ease-in-out"
-            data-carousel-item="active"
-          >
-            <div
-              style="
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+          <div style="
                 background-image: url(./assets/bg_img_2.png);
                 background-size: cover;
                 background-position: center;
-              "
-              class="h-full w-full"
-            >
-              <div class="container">
-                <div
-                  class="top-1/2 w-full flex flex-col md:flex-row items-center md:justify-between gap-10 padding"
-                >
-                  <div class="">
-                    <h4 class="text-primary text-[14px] leading-6.5 font-bold">
-                      Booking Now
-                    </h4>
-                    <h1
-                      class="text-white text-4xl lg:text-5xl font-bold mb-10.5 mt-8.75"
-                    >
-                      <span class="block">Book your appointment online </span
-                      >And call our salon
-                    </h1>
-                    <button
-                      class="px-5 py-3 text-sm font-medium text-white bg-primary cursor-pointer flex items-center gap-2"
-                    >
-                      BOOKING APPOINMENT
+              " class="h-full w-full">
+            <div class="container">
+              <div class="top-1/2 w-full flex flex-col md:flex-row items-center md:justify-between gap-10 padding">
+                <div class="">
+                  <h4 class="text-primary text-[14px] leading-6.5 font-bold">
+                    Booking Now
+                  </h4>
+                  <h1 class="text-white text-4xl lg:text-5xl font-bold mb-10.5 mt-8.75">
+                    <span class="block">Book your appointment online </span>And call our salon
+                  </h1>
+                  <button
+                    class="px-5 py-3 text-sm font-medium text-white bg-primary cursor-pointer flex items-center gap-2">
+                    BOOKING APPOINMENT
 
-                      <div class="w-3 h-3">
-                        <img src="./assets/right-arrow.png" alt="arrow" />
-                      </div>
-                    </button>
-                  </div>
-                  <div
-                    class="bg-white w-37.5 h-37.5 flex flex-col items-center justify-center"
-                  >
-                    <div class="w-12.5 h-12.5">
-                      <img src="./assets/phone2.png" alt="" />
+                    <div class="w-3 h-3">
+                      <img src="./assets/right-arrow.png" alt="arrow" />
                     </div>
-                    <p class="text-center">
-                      <span class="block">Call Now</span> +125 (895) 658
-                    </p>
+                  </button>
+                </div>
+                <div class="bg-white w-37.5 h-37.5 flex flex-col items-center justify-center">
+                  <div class="w-12.5 h-12.5">
+                    <img src="./assets/phone2.png" alt="" />
                   </div>
+                  <p class="text-center">
+                    <span class="block">Call Now</span> +125 (895) 658
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Item 3 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <div
-              style="
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div style="
                 background-image: url(./assets/banner.png);
                 background-size: cover;
                 background-position: center;
-              "
-              class="md:h-116.5 w-full"
-            >
-              <div class="container">
-                <div class="w-full flex flex-col items-start py-16 padding">
-                  <h4 class="text-primary text-[14px] leading-6.5 font-bold">
-                    Welcome to Our Barber
-                  </h4>
-                  <h1
-                    class="text-white text-4xl lg:text-5xl font-bold mb-16 mt-8.75"
-                  >
-                    <span class="block">Best Hair Salon for a </span
-                    >Professional Look
-                  </h1>
-                  <div class="flex gap-3">
-                    <button
-                      class="px-5 py-3 text-sm font-medium text-white bg-primary cursor-pointer flex items-center gap-2"
-                    >
-                      BOOKING NOW
-                      <div class="w-3 h-3">
-                        <img src="./assets/right-arrow.png" alt="" />
-                      </div>
-                    </button>
-                    <button
-                      class="px-5 py-3 text-sm font-medium text-primary bg-transparent cursor-pointer flex items-center gap-2 border border-primary"
-                    >
-                      BOOKING NOW
-                      <div class="w-3 h-3">
-                        <img src="./assets/color-arrow.png" alt="arrow" />
-                      </div>
-                    </button>
-                  </div>
+              " class="md:h-116.5 w-full">
+            <div class="container">
+              <div class="w-full flex flex-col items-start py-16 padding">
+                <h4 class="text-primary text-[14px] leading-6.5 font-bold">
+                  Welcome to Our Barber
+                </h4>
+                <h1 class="text-white text-4xl lg:text-5xl font-bold mb-16 mt-8.75">
+                  <span class="block">Best Hair Salon for a </span>Professional Look
+                </h1>
+                <div class="flex gap-3">
+                  <button
+                    class="px-5 py-3 text-sm font-medium text-white bg-primary cursor-pointer flex items-center gap-2">
+                    BOOKING NOW
+                    <div class="w-3 h-3">
+                      <img src="./assets/right-arrow.png" alt="" />
+                    </div>
+                  </button>
+                  <button
+                    class="px-5 py-3 text-sm font-medium text-primary bg-transparent cursor-pointer flex items-center gap-2 border border-primary">
+                    BOOKING NOW
+                    <div class="w-3 h-3">
+                      <img src="./assets/color-arrow.png" alt="arrow" />
+                    </div>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Item 4 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="./assets/bg_img_2.png"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./assets/bg_img_2.png"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        </div>
+      </div>
+      <!-- Slider controls -->
+
+      <!-- left button -->
+      <button type="button"
+        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m15 19-7-7 7-7" />
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <!-- right button -->
+      <button type="button"
+        class="absolute top-0 inset-e-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m9 5 7 7-7 7" />
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
+  </section>
+
+  <!-- About Us Start -->
+
+  <section id="about" class="padding">
+    <div class="container">
+      <div class="flex flex-col md:flex-row gap-40 items-center justify-center">
+        <div class="w-87.5 h-73.25">
+          <img src="./assets/about_img.png" alt="about_img" />
+        </div>
+        <div class="md:w-61 w-full">
+          <h4 class="text-primary text-[14px] leading-4 font-bold">
+            About Us
+          </h4>
+          <h2 class="text-[24px] text-secondary pt-3 font-bold">
+            Best Haircut Salons For Men Women
+          </h2>
+          <p class="text-[12px] text-p py-4.5">
+            faucibus nisl amet egestas blandit. Aliquet habitant cras pulvinar
+            neque donec urna. At facilisis mollis volutpat condimentum
+            vestibulum auctor ac pretium.
+          </p>
+          <!-- button -->
+          <button
+            class="px-5 py-3 text-sm font-medium text-white bg-primary cursor-pointer flex items-center gap-2 uppercase">
+            Read More
+            <div class="w-3 h-3">
+              <img src="./assets/right-arrow.png" alt="" />
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our services Start -->
+
+  <section id="services">
+    <div class="container">
+      <div class="bg-[#F7F7F7] padding">
+        <div class="text-center pb-10">
+          <h4 class="text-primary text-[14px] leading-4 font-bold uppercase">
+            Our Services
+          </h4>
+          <h2 class="text-[24px] text-secondary lg:pt-4 pt-3 font-bold">
+            <span class="block">Popular Hair Cutting </span>
+            And Salon
+          </h2>
+        </div>
+
+        <div class="grid lg:grid-cols-6 grid-cols-3 justify-between wrap-break-word lg:gap-8 gap-5 pb-13">
+          <div class="bg-[#D9D9D9] hover:bg-nav w-30 h-30 flex flex-col items-center justify-center duration-300">
+            <div class="w-10 h-10">
+              <img src="./assets/emoji-haircut.png" alt="about_img" />
+            </div>
+            <h4 class="text-primary text-[14px] leading-4 font-bold pt-4">
+              Trand Haircut
+            </h4>
+          </div>
+          <div class="bg-[#D9D9D9] hover:bg-nav w-30 h-30 flex flex-col items-center justify-center duration-300">
+            <div class="w-10 h-10">
+              <img src="./assets/emoji-haircut.png" alt="about_img" />
+            </div>
+            <h4 class="text-primary text-[14px] leading-4 font-bold pt-4">
+              Trand Haircut
+            </h4>
+          </div>
+          <div class="bg-[#D9D9D9] hover:bg-nav w-30 h-30 flex flex-col items-center justify-center duration-300">
+            <div class="w-10 h-10">
+              <img src="./assets/emoji-haircut.png" alt="about_img" />
+            </div>
+            <h4 class="text-primary text-[14px] leading-4 font-bold pt-4">
+              Trand Haircut
+            </h4>
+          </div>
+          <div class="bg-[#D9D9D9] hover:bg-nav w-30 h-30 flex flex-col items-center justify-center duration-300">
+            <div class="w-10 h-10">
+              <img src="./assets/emoji-haircut.png" alt="about_img" />
+            </div>
+            <h4 class="text-primary text-[14px] leading-4 font-bold pt-4">
+              Trand Haircut
+            </h4>
+          </div>
+          <div class="bg-[#D9D9D9] hover:bg-nav w-30 h-30 flex flex-col items-center justify-center duration-300">
+            <div class="w-10 h-10">
+              <img src="./assets/emoji-haircut.png" alt="about_img" />
+            </div>
+            <h4 class="text-primary text-[14px] leading-4 font-bold pt-4">
+              Trand Haircut
+            </h4>
+          </div>
+          <div class="bg-[#D9D9D9] hover:bg-nav w-30 h-30 flex flex-col items-center justify-center duration-300">
+            <div class="w-10 h-10">
+              <img src="./assets/emoji-haircut.png" alt="about_img" />
+            </div>
+            <h4 class="text-primary text-[14px] leading-4 font-bold pt-4">
+              Trand Haircut
+            </h4>
           </div>
         </div>
-        <!-- Slider controls -->
 
-        <!-- left button -->
-        <button
-          type="button"
-          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-prev
-        >
-          <span
-            class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-          >
-            <svg
-              class="w-5 h-5 text-white rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m15 19-7-7 7-7"
-              />
-            </svg>
-            <span class="sr-only">Previous</span>
-          </span>
-        </button>
-        <!-- right button -->
-        <button
-          type="button"
-          class="absolute top-0 inset-e-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-next
-        >
-          <span
-            class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-          >
-            <svg
-              class="w-5 h-5 text-white rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m9 5 7 7-7 7"
-              />
-            </svg>
-            <span class="sr-only">Next</span>
-          </span>
-        </button>
-      </div>
-    </section>
-
-    <!-- About Us Start -->
-
-    <section id="about" class="padding">
-      <div class="container">
-        <div
-          class="flex flex-col md:flex-row gap-40 items-center justify-center"
-        >
-          <div class="w-87.5 h-73.25">
-            <img src="./assets/about_img.png" alt="about_img" />
+        <div class="flex flex-col md:flex-row md:gap-40 gap-10 items-center justify-center">
+          <div class="w-82.5 h-55">
+            <img src="./assets/service-img.png" alt="service_img" />
           </div>
           <div class="md:w-61 w-full">
-            <h4 class="text-primary text-[14px] leading-4 font-bold">
-              About Us
-            </h4>
-            <h2 class="text-[24px] text-secondary pt-3 font-bold">
-              Best Haircut Salons For Men Women
+            <h2 class="text-[24px] text-secondary pt-3">
+              Best Facial Hair Trim At Home Treatment
             </h2>
             <p class="text-[12px] text-p py-4.5">
-              faucibus nisl amet egestas blandit. Aliquet habitant cras pulvinar
-              neque donec urna. At facilisis mollis volutpat condimentum
-              vestibulum auctor ac pretium.
+              faucibus nisl amet egestas blandit. Aliquet habitant cras
+              pulvinar neque donec urna. At facilisis mollis volutpat
+              condimentum vestibulum auctor ac pretium.
             </p>
             <!-- button -->
             <button
-              class="px-5 py-3 text-sm font-medium text-white bg-primary cursor-pointer flex items-center gap-2 uppercase"
-            >
-              Read More
+              class="px-5 py-3 text-sm font-medium text-white bg-primary cursor-pointer flex items-center gap-2 uppercase">
+              Book Appointment
               <div class="w-3 h-3">
                 <img src="./assets/right-arrow.png" alt="" />
               </div>
@@ -421,395 +386,402 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Our services Start -->
+  <!-- Booking Now Start -->
 
-    <section id="services">
-      <div class="container">
-        <div class="bg-[#F7F7F7] padding">
-          <div class="text-center pb-10">
-            <h4 class="text-primary text-[14px] leading-4 font-bold uppercase">
-              Our Services
-            </h4>
-            <h2 class="text-[24px] text-secondary lg:pt-4 pt-3 font-bold">
-              <span class="block">Popular Hair Cutting </span>
-              And Salon
-            </h2>
-          </div>
-
-          <div
-            class="grid lg:grid-cols-6 grid-cols-3 justify-between wrap-break-word lg:gap-8 gap-5 pb-13"
-          >
-            <div
-              class="bg-[#D9D9D9] hover:bg-nav w-30 h-30 flex flex-col items-center justify-center duration-300"
-            >
-              <div class="w-10 h-10">
-                <img src="./assets/emoji-haircut.png" alt="about_img" />
-              </div>
-              <h4 class="text-primary text-[14px] leading-4 font-bold pt-4">
-                Trand Haircut
-              </h4>
-            </div>
-            <div
-              class="bg-[#D9D9D9] hover:bg-nav w-30 h-30 flex flex-col items-center justify-center duration-300"
-            >
-              <div class="w-10 h-10">
-                <img src="./assets/emoji-haircut.png" alt="about_img" />
-              </div>
-              <h4 class="text-primary text-[14px] leading-4 font-bold pt-4">
-                Trand Haircut
-              </h4>
-            </div>
-            <div
-              class="bg-[#D9D9D9] hover:bg-nav w-30 h-30 flex flex-col items-center justify-center duration-300"
-            >
-              <div class="w-10 h-10">
-                <img src="./assets/emoji-haircut.png" alt="about_img" />
-              </div>
-              <h4 class="text-primary text-[14px] leading-4 font-bold pt-4">
-                Trand Haircut
-              </h4>
-            </div>
-            <div
-              class="bg-[#D9D9D9] hover:bg-nav w-30 h-30 flex flex-col items-center justify-center duration-300"
-            >
-              <div class="w-10 h-10">
-                <img src="./assets/emoji-haircut.png" alt="about_img" />
-              </div>
-              <h4 class="text-primary text-[14px] leading-4 font-bold pt-4">
-                Trand Haircut
-              </h4>
-            </div>
-            <div
-              class="bg-[#D9D9D9] hover:bg-nav w-30 h-30 flex flex-col items-center justify-center duration-300"
-            >
-              <div class="w-10 h-10">
-                <img src="./assets/emoji-haircut.png" alt="about_img" />
-              </div>
-              <h4 class="text-primary text-[14px] leading-4 font-bold pt-4">
-                Trand Haircut
-              </h4>
-            </div>
-            <div
-              class="bg-[#D9D9D9] hover:bg-nav w-30 h-30 flex flex-col items-center justify-center duration-300"
-            >
-              <div class="w-10 h-10">
-                <img src="./assets/emoji-haircut.png" alt="about_img" />
-              </div>
-              <h4 class="text-primary text-[14px] leading-4 font-bold pt-4">
-                Trand Haircut
-              </h4>
-            </div>
-          </div>
-
-          <div
-            class="flex flex-col md:flex-row md:gap-40 gap-10 items-center justify-center"
-          >
-            <div class="w-82.5 h-55">
-              <img src="./assets/service-img.png" alt="service_img" />
-            </div>
-            <div class="md:w-61 w-full">
-              <h2 class="text-[24px] text-secondary pt-3">
-                Best Facial Hair Trim At Home Treatment
-              </h2>
-              <p class="text-[12px] text-p py-4.5">
-                faucibus nisl amet egestas blandit. Aliquet habitant cras
-                pulvinar neque donec urna. At facilisis mollis volutpat
-                condimentum vestibulum auctor ac pretium.
-              </p>
-              <!-- button -->
-              <button
-                class="px-5 py-3 text-sm font-medium text-white bg-primary cursor-pointer flex items-center gap-2 uppercase"
-              >
-                Book Appointment
-                <div class="w-3 h-3">
-                  <img src="./assets/right-arrow.png" alt="" />
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Booking Now Start -->
-
-    <section id="booking" class="w-full">
-      <div
-        style="
+  <section id="booking" class="w-full">
+    <div style="
           background-image: url(./assets/bg_img_2.png);
           background-size: cover;
           background-position: center;
-        "
-        class="h-full w-full"
-      >
-        <div class="container">
-          <div
-            class="top-1/2 w-full flex flex-col md:flex-row items-center md:justify-between gap-10 padding"
-          >
-            <div class="">
-              <h4 class="text-primary text-[14px] leading-6.5 font-bold">
-                Booking Now
-              </h4>
-              <h1
-                class="text-white text-4xl lg:text-5xl font-bold mb-10.5 mt-8.75"
-              >
-                <span class="md:block">Book your appointment online </span>And call
-                our salon
-              </h1>
+        " class="h-full w-full">
+      <div class="container">
+        <div class="top-1/2 w-full flex flex-col md:flex-row items-center md:justify-between gap-10 padding">
+          <div class="">
+            <h4 class="text-primary text-[14px] leading-6.5 font-bold">
+              Booking Now
+            </h4>
+            <h1 class="text-white text-4xl lg:text-5xl font-bold mb-10.5 mt-8.75">
+              <span class="md:block">Book your appointment online </span>And call
+              our salon
+            </h1>
+            <button
+              class="px-5 py-3 text-sm font-medium text-white bg-primary cursor-pointer flex items-center gap-2 uppercase">
+              Booking Appoinment
+              <div class="w-3 h-3">
+                <img src="./assets/right-arrow.png" alt="arrow" />
+              </div>
+            </button>
+          </div>
+          <div class="bg-white w-37.5 h-37.5 flex flex-col items-center justify-center">
+            <div class="w-12.5 h-12.5">
+              <img src="./assets/phone2.png" alt="" />
+            </div>
+            <p class="text-center">
+              <span class="block">Call Now</span> +125 (895) 658
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Products Start  -->
+
+  <section id="products" class="padding">
+    <div class="container">
+      <div>
+        <div class="text-center pb-10">
+          <h4 class="text-primary text-[14px] leading-4 font-semibold">
+            Our Products
+          </h4>
+          <h2 class="text-[24px] text-secondary lg:pt-4 pt-3 font-semibold">
+            <span class="md:block">Evoke the experience of one of our </span>
+            barber shops
+          </h2>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-7.5 pb-10">
+          <div class="flex flex-col items-center justify-center">
+            <div class="w-37.5 h-37.5">
+              <img src="./assets/products-1.png" alt="" />
+            </div>
+            <ul class="flex flex-row items-center pt-4.5">
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/full-star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/full-star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/full-star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/star.png" alt="" />
+              </li>
+            </ul>
+            <h4 class="text-black text-[14px] py-2.5">New Facewash</h4>
+            <h4 class="text-primary text-[14px] leading-4">$567</h4>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <div class="w-37.5 h-37.5">
+              <img src="./assets/products-2.png" alt="" />
+            </div>
+            <ul class="flex flex-row items-center pt-4.5">
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/full-star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/full-star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/full-star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/star.png" alt="" />
+              </li>
+            </ul>
+            <h4 class="text-black text-[14px] py-2.5">New Facewash</h4>
+            <h4 class="text-primary text-[14px] leading-4">$567</h4>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <div class="w-37.5 h-37.5">
+              <img src="./assets/products-3.png" alt="" />
+            </div>
+            <ul class="flex flex-row items-center pt-4.5">
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/full-star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/full-star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/full-star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/star.png" alt="" />
+              </li>
+            </ul>
+            <h4 class="text-black text-[14px] py-2.5">New Facewash</h4>
+            <h4 class="text-primary text-[14px] leading-4">$567</h4>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <div class="w-37.5 h-37.5">
+              <img src="./assets/products-4.png" alt="" />
+            </div>
+            <ul class="flex flex-row items-center pt-4.5">
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/full-star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/full-star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/full-star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/star.png" alt="" />
+              </li>
+            </ul>
+            <h4 class="text-black text-[14px] py-2.5">New Facewash</h4>
+            <h4 class="text-primary text-[14px] leading-4">$567</h4>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-[3fr_4fr] gap-0 items-center justify-center">
+          <div class="md:w-147 md:h-105 w-full h-full">
+            <img src="./assets/products-5.png" alt="" />
+          </div>
+          <div class="bg-primary flex-col items-center justify-center h-full py-10 md:py-0">
+            <div class="md:pl-11 px-5">
+              <h2 class="text-[24px] text-white lg:pt-4 pt-3 font-semibold">
+                Working Hours
+              </h2>
+              <p class="text-[12px] text-white py-4.5 md:w-63.5 w-full">
+                faucibus nisl amet egestas blandit. Aliquet habitant cras
+                pulvinar neque donec urna.
+              </p>
+              <div class="flex flex-col gap-3 pb-12 pt-5">
+                <div
+                  class="flex flex-row w-full md:w-69.5 pb-1 items-center justify-between text-white border-b border-dashed">
+                  <h4>Monday</h4>
+                  <p>:</p>
+                  <h4>9:AM-6:pm</h4>
+                </div>
+                <div
+                  class="flex flex-row w-full md:w-69.5 pb-1 items-center justify-between text-white border-b border-dashed">
+                  <h4>Tuesday</h4>
+                  <p>:</p>
+                  <h4>9:AM-6:pm</h4>
+                </div>
+                <div
+                  class="flex flex-row w-full md:w-69.5 pb-1 items-center justify-between text-white border-b border-dashed">
+                  <h4>Wednesday</h4>
+                  <p>:</p>
+                  <h4>9:AM-6:pm</h4>
+                </div>
+              </div>
               <button
-                class="px-5 py-3 text-sm font-medium text-white bg-primary cursor-pointer flex items-center gap-2 uppercase"
-              >
-                Booking Appoinment
+                class="px-5 py-3 text-sm font-medium text-white bg-transparent cursor-pointer flex items-center gap-2 border border-white uppercase">
+                Booking Appointment
                 <div class="w-3 h-3">
                   <img src="./assets/right-arrow.png" alt="arrow" />
                 </div>
               </button>
             </div>
-            <div
-              class="bg-white w-37.5 h-37.5 flex flex-col items-center justify-center"
-            >
-              <div class="w-12.5 h-12.5">
-                <img src="./assets/phone2.png" alt="" />
-              </div>
-              <p class="text-center">
-                <span class="block">Call Now</span> +125 (895) 658
-              </p>
-            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Our Products Start  -->
-
-    <section id="products" class="padding">
-      <div class="container">
-        <div>
-          <div class="text-center pb-10">
-            <h4 class="text-primary text-[14px] leading-4 font-semibold">
-              Our Products
+        <div class="flex flex-wrap gap-7.5 justify-between items-center pt-12">
+          <div class="md:w-61 w-full ">
+            <h4 class="text-primary text-[14px] leading-4 font-bold">
+              Testimonial
             </h4>
-            <h2 class="text-[24px] text-secondary lg:pt-4 pt-3 font-semibold">
-              <span class="md:block">Evoke the experience of one of our </span>
-              barber shops
+            <h2 class="text-[24px] text-secondary pt-3 font-bold">
+              What Our
+              Customar Say’s
             </h2>
+            <p class="text-[12px] text-p py-4.5">
+              Barber Trading Style and Proven Strategy
+              to Make a Living
+            </p>
+            <!-- button -->
+            <button
+              class="px-5 py-3 text-sm font-medium text-primary bg-transparent cursor-pointer flex items-center gap-2 border border-primary uppercase">
+              View All Review
+              <div class="w-3 h-3">
+                <img src="./assets/color-arrow.png" alt="arrow" />
+              </div>
+            </button>
           </div>
-          <div class="flex flex-wrap items-center justify-center gap-7.5 pb-10">
-            <div class="flex flex-col items-center justify-center">
-              <div class="w-37.5 h-37.5">
-                <img src="./assets/products-1.png" alt="" />
-              </div>
-              <ul class="flex flex-row items-center pt-4.5">
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/full-star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/full-star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/full-star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/star.png" alt="" />
-                </li>
-              </ul>
-              <h4 class="text-black text-[14px] py-2.5">New Facewash</h4>
-              <h4 class="text-primary text-[14px] leading-4">$567</h4>
+          <div class="bg-white w-63.75 h-56 flex flex-col items-center justify-center">
+            <div class="w-15">
+              <img src="./assets/testimonial.png" alt="testimonial">
             </div>
-            <div class="flex flex-col items-center justify-center">
-              <div class="w-37.5 h-37.5">
-                <img src="./assets/products-2.png" alt="" />
-              </div>
-              <ul class="flex flex-row items-center pt-4.5">
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/full-star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/full-star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/full-star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/star.png" alt="" />
-                </li>
-              </ul>
-              <h4 class="text-black text-[14px] py-2.5">New Facewash</h4>
-              <h4 class="text-primary text-[14px] leading-4">$567</h4>
-            </div>
-            <div class="flex flex-col items-center justify-center">
-              <div class="w-37.5 h-37.5">
-                <img src="./assets/products-3.png" alt="" />
-              </div>
-              <ul class="flex flex-row items-center pt-4.5">
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/full-star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/full-star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/full-star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/star.png" alt="" />
-                </li>
-              </ul>
-              <h4 class="text-black text-[14px] py-2.5">New Facewash</h4>
-              <h4 class="text-primary text-[14px] leading-4">$567</h4>
-            </div>
-            <div class="flex flex-col items-center justify-center">
-              <div class="w-37.5 h-37.5">
-                <img src="./assets/products-4.png" alt="" />
-              </div>
-              <ul class="flex flex-row items-center pt-4.5">
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/full-star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/full-star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/full-star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/star.png" alt="" />
-                </li>
-              </ul>
-              <h4 class="text-black text-[14px] py-2.5">New Facewash</h4>
-              <h4 class="text-primary text-[14px] leading-4">$567</h4>
-            </div>
+            <h4 class="w-46.75 text-black text-[12px] pt-4">Donec praesent venenatis est maecenas dui massa volutpat
+            </h4>
+            <ul class="flex flex-row items-center pt-3">
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/full-star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/full-star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/full-star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/star.png" alt="" />
+              </li>
+            </ul>
+            <h4 class="text-black text-[12px] pt-3">Omar Geidt</h4>
           </div>
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 items-center justify-center"
-          >
-            <div class="md:w-147 md:h-105 w-full h-full">
-              <img src="./assets/products-5.png" alt="" />
+          <div class="bg-white w-63.75 h-56 flex flex-col items-center justify-center">
+            <div class="w-15">
+              <img src="./assets/testimonial-2.png" alt="testimonial">
             </div>
-            <div
-              class="bg-primary flex-col items-center justify-center h-full py-10 md:py-0"
-            >
-              <div class="md:pl-11 px-5">
-                <h2 class="text-[24px] text-white lg:pt-4 pt-3 font-semibold">
-                  Working Hours
-                </h2>
-                <p class="text-[12px] text-white py-4.5 md:w-63.5 w-full">
-                  faucibus nisl amet egestas blandit. Aliquet habitant cras
-                  pulvinar neque donec urna.
-                </p>
-                <div class="flex flex-col gap-3 pb-12 pt-5">
-                  <div
-                    class="flex flex-row w-full md:w-69.5 pb-1 items-center justify-between text-white border-b border-dashed"
-                  >
-                    <h4>Monday</h4>
-                    <p>:</p>
-                    <h4>9:AM-6:pm</h4>
-                  </div>
-                  <div
-                    class="flex flex-row w-full md:w-69.5 pb-1 items-center justify-between text-white border-b border-dashed"
-                  >
-                    <h4>Tuesday</h4>
-                    <p>:</p>
-                    <h4>9:AM-6:pm</h4>
-                  </div>
-                  <div
-                    class="flex flex-row w-full md:w-69.5 pb-1 items-center justify-between text-white border-b border-dashed"
-                  >
-                    <h4>Wednesday</h4>
-                    <p>:</p>
-                    <h4>9:AM-6:pm</h4>
-                  </div>
-                </div>
-                <button
-                  class="px-5 py-3 text-sm font-medium text-white bg-transparent cursor-pointer flex items-center gap-2 border border-white uppercase"
-                >
-                  Booking Appointment
-                  <div class="w-3 h-3">
-                    <img src="./assets/right-arrow.png" alt="arrow" />
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-wrap gap-7.5 justify-between items-center pt-12">
-            <div class="md:w-61 w-full ">
-              <h4 class="text-primary text-[14px] leading-4 font-bold">
-                Testimonial
-              </h4>
-              <h2 class="text-[24px] text-secondary pt-3 font-bold">
-                What Our 
-                Customar Say’s
-              </h2>
-              <p class="text-[12px] text-p py-4.5">
-                Barber Trading Style and Proven Strategy 
-                to Make a Living
-              </p>
-              <!-- button -->
-              <button
-                class="px-5 py-3 text-sm font-medium text-primary bg-transparent cursor-pointer flex items-center gap-2 border border-primary uppercase"
-              >
-                View All Review
-                <div class="w-3 h-3">
-                  <img src="./assets/color-arrow.png" alt="arrow" />
-                </div>
-              </button>
-            </div>
-            <div class="bg-white w-63.75 h-56 flex flex-col items-center justify-center">
-              <div class="w-15"> 
-                <img src="./assets/testimonial.png" alt="testimonial">
-              </div>
-              <h4 class="w-46.75 text-black text-[12px] pt-4">Donec praesent venenatis est maecenas dui massa volutpat</h4>
-              <ul class="flex flex-row items-center pt-3">
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/full-star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/full-star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/full-star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/star.png" alt="" />
-                </li>
-              </ul>
-              <h4 class="text-black text-[12px] pt-3">Omar Geidt</h4>
-            </div>
-            <div class="bg-white w-63.75 h-56 flex flex-col items-center justify-center">
-              <div class="w-15"> 
-                <img src="./assets/testimonial-2.png" alt="testimonial">
-              </div>
-              <h4 class="w-46.75 text-black text-[12px] pt-4">Donec praesent venenatis est maecenas dui massa volutpat</h4>
-              <ul class="flex flex-row items-center pt-3">
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/full-star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/full-star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/full-star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/star.png" alt="" />
-                </li>
-                <li class="w-4 h-4 gap-1">
-                  <img src="./assets/star.png" alt="" />
-                </li>
-              </ul>
-              <h4 class="text-black text-[12px] pt-3">Maria Lipshutz</h4>
-            </div>
+            <h4 class="w-46.75 text-black text-[12px] pt-4">Donec praesent venenatis est maecenas dui massa volutpat
+            </h4>
+            <ul class="flex flex-row items-center pt-3">
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/full-star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/full-star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/full-star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/star.png" alt="" />
+              </li>
+              <li class="w-4 h-4 gap-1">
+                <img src="./assets/star.png" alt="" />
+              </li>
+            </ul>
+            <h4 class="text-black text-[12px] pt-3">Maria Lipshutz</h4>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
-  </body>
+  <!-- Blog and Article -->
+
+  <section id="blog" class="padding">
+    <div class="container">
+      <div>
+        <div class="text-center pb-10">
+          <h4 class="text-primary text-[14px] leading-4 font-semibold">
+            Blog and Article
+          </h4>
+          <h2 class="text-[24px] text-secondary lg:pt-4 pt-3 font-semibold">
+            <span class="md:block">Read Our Blog and News
+          </h2>
+        </div>
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-7.5 items-center justify-center">
+          <div class="flex flex-col gap-1 md:w-67.5">
+            <div class="w-full ">
+              <img src="./assets/blog_img.png" alt="blog_img">
+            </div>
+            <p class="text-[12px] text-black px-2 font-bold">
+              Tortor tortor ut diam velit ornare laoreet sodales in massa. Sit sociis arcu libero. Ac maecenas lorem
+              nisi rhoncus. Erat dolor sodales amet vitae id aliquet egestas.
+            </p>
+          </div>
+          <div class="flex flex-col gap-1 md:w-67.5">
+            <div class="w-full ">
+              <img src="./assets/blog_img2.png" alt="blog_img">
+            </div>
+            <p class="text-[12px] text-black px-2 font-bold">
+              Tortor tortor ut diam velit ornare laoreet sodales in massa. Sit sociis arcu libero. Ac maecenas lorem
+              nisi rhoncus. Erat dolor sodales amet vitae id aliquet egestas.
+            </p>
+          </div>
+          <div class="flex flex-col gap-1 md:w-67.5">
+            <div class="w-full ">
+              <img src="./assets/blog_img3.png" alt="blog_img">
+            </div>
+            <p class="text-[12px] text-black px-2 font-bold">
+              Tortor tortor ut diam velit ornare laoreet sodales in massa. Sit sociis arcu libero. Ac maecenas lorem
+              nisi rhoncus. Erat dolor sodales amet vitae id aliquet egestas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- images -->
+
+  <section id="image" class="-mb-20">
+    <div class="flex flex-wrap items-center justify-center gap-7.5">
+      <div class="w-42.5 h-42.5">
+        <img src="./assets/img1.png" alt="">
+      </div>
+      <div class="w-42.5 h-42.5">
+        <img src="./assets/img2.png" alt="">
+      </div>
+      <div class="w-42.5 h-42.5">
+        <img src="./assets/img3.png" alt="">
+      </div>
+      <div class="w-42.5 h-42.5">
+        <img src="./assets/img4.png" alt="">
+      </div>
+      <div class="w-42.5 h-42.5">
+        <img src="./assets/img5.png" alt="">
+      </div>
+      <div class="w-42.5 h-42.5">
+        <img src="./assets/img6.png" alt="">
+      </div>
+      <div class="w-42.5 h-42.5">
+        <img src="./assets/img7.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+
+  <footer id="footer" class="bg-[#2E3C42] pt-40 ">
+    <div class="container">
+      <div class="flex md:flex-row flex-col gap-5 justify-between px-5">
+        <div>
+          <a href="" class=""><img src="./assets/Logo.png" alt="logo" class="text[32px]" />
+          </a>
+          <ul class="flex items-center gap-7.5 text-white text-[14px] pt-2.5">
+            <li class="hover:text-primary duration-300">Hair Wash</li>
+            <li class="hover:text-primary duration-300">Hair Massage</li>
+            <li class="hover:text-primary duration-300">Haircolor</li>
+            <li class="hover:text-primary duration-300">Hair Wash</li>
+          </ul>
+        </div>
+        <form action="" class="flex ">
+          <input type="email" placeholder="Email Address"
+            class="text-white text-[13px] bg-transparent border border-primary">
+          <button class="px-5 py-3 text-sm text-white bg-primary cursor-pointer flex items-center gap-2 uppercase">
+            Subscribe
+          </button>
+        </form>
+        <div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="bg-[#878484] md:mt-15 mt-8 w-full h-0.5">
+
+    <div class="container">
+      <div class="grid md:grid-cols-2 grid-cols-1 md:flex-row py-5 gap-7 px-5"> 
+        <div>
+          <p class="text-white text-[12px]">Copyright @ 2025, website by Logo</p>
+        </div>
+        <div class="flex flex-row gap-7.5 items-center">
+          <div class="w-6 h-6">
+            <img src="./assets/ic_baseline-facebook.png" alt="">
+          </div>
+          <div class="w-6 h-6">
+            <img src="./assets/mdi_twitter.png" alt="">
+          </div>
+          <div class="w-6 h-6">
+            <img src="./assets/ri_linkedin-fill.png" alt="">
+          </div>
+          <div class="w-6 h-6">
+            <img src="./assets/mingcute_behance-fill.png" alt="">
+          </div>
+          <div class="w-6 h-6">
+            <img src="./assets/icon-park-outline_dribble.png" alt="">
+          </div>
+          <div class="w-6 h-6">
+            <img src="./assets/mingcute_snapchat-line.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+</body>
+
 </html>
